@@ -2,6 +2,7 @@
 import pandas as pd
 from bs4 import BeautifulSoup as bs
 from splinter import Browser
+from webdriver_manager.chrome import ChromeDriverManager
 
 def scrape():
     
@@ -42,9 +43,4 @@ def scrape():
     }
     
     return scrape_results
-
-
-if __name__ == "__main__":
-    scrape.run(debug=True)
-
 
