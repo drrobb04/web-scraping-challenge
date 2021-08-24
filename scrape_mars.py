@@ -44,5 +44,7 @@ def scrape():
         "facts" : mars_table,
     }
     
+    print(scrape_results)
+
     return scrape_results
 
