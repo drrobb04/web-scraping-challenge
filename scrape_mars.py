@@ -6,9 +6,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 def scrape():
     
-    executable_path = {'executable_path': ChromeDriverManager().install()}
-    
     #code for news scraping
+    executable_path = {'executable_path': ChromeDriverManager().install()}
     browser = Browser('chrome', **executable_path, headless=False)
     scrape_url = "https://mars.nasa.gov/news/?page=0&per_page=40&order=publish_date+desc%2Ccreated_at+desc&search=&category=19%2C165%2C184%2C204&blank_scope=Latest"
     browser.visit(scrape_url)
@@ -21,6 +20,7 @@ def scrape():
     browser.quit()
     
     #code for jpl scraping
+    executable_path = {'executable_path': ChromeDriverManager().install()}
     browser = Browser('chrome', **executable_path, headless=False)
     scrape_url = "https://data-class-jpl-space.s3.amazonaws.com/JPL_Space/index.html"
     browser.visit(scrape_url)
