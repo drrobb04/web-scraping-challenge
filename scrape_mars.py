@@ -39,9 +39,9 @@ def scrape():
     # Dictionary build
     scrape_results = {
         "news_title" : news_title,
-        "news_paragraph" : news_graph,
-        "featured_image" : jpl_url,
-        "facts" : mars_table,
+        "news_graph" : news_graph,
+        "jpl_url" : jpl_url,
+        "mars_table" : mars_table,
     }
     
     print(scrape_results)

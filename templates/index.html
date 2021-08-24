@@ -21,21 +21,21 @@
       <div class="col-md-12">
         <h2>Latest Mars News</h2>
         <h4>{{mars.news_title}}</h4>
-        <p>{{mars.news_paragraph}}</p>
+        <p>{{mars.news_graph}}</p>
       </div>
     </div>
 
     <div class="row">
         <div class="col-md-12">
           <h2>Featured Mars Image</h2>
-          <img src={{mars.featured_image}}>
+          <img src={{mars.jpl_url}}>
         </div>
       </div>
     
       <div class="row">
         <div class="col-md-12">
           <h2>Mars Data</h2>
-          {{mars.facts}}
+          <table>{{mars.mars_table}}</table>
         </div>
       </div>
 
